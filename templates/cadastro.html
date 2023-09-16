@@ -1,15 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/cadastro.css')}}"
     />
-    <title>cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <title>Login</title>
   </head>
+
   <body>
-    <h1>cadastro</h1>
+    <div class="logo">
+      <h1>
+        Travel Copilot
+      </h1>
+    </div>    
+    <div id="sign-up">
+      <form class="card">
+        <div class="card-header">
+          <h2>Cadastre-se</h2>
+        </div>
+
+        <div class="card-content">
+          <div class="card-content-area">
+            <label for="name">Nome</label>
+
+            <input type="text" id="name1" autocomplete="off" />
+          </div>
+
+          <div class="card-content-area">
+            <label for="email">E-mail</label>
+
+            <input type="email" id="email" autocomplete="off" />
+          </div>
+
+          <div class="card-content-area">
+            <label for="password">Senha</label>
+
+            <input type="password" id="password" autocomplete="off" />
+          </div>
+          <div class="card-content-area">
+            <label for="repassword">Confirme a senha</label>
+
+            <input type="password" id="repassword" autocomplete="off" />
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <input type="submit" value="Cadastrar" class="submit" />          
+        </div>
+      </form>
+    </div>
   </body>
 </html>
