@@ -27,7 +27,7 @@
       <h1>Travel Copilot</h1>
     </div>
     <div id="login">
-      <form class="card">
+      <form class="card" action="{{url_for('planejar')}}">
         <div class="card-header">
           <h2>Login</h2>
         </div>
@@ -47,7 +47,7 @@
         </div>
 
         <div class="card-footer">
-          <a type="submit" value="Entrar" class="submit" href="{{url_for('planejar')}}">Entrar</a>
+          <button type="submit" value="Entrar" class="submit" href="{{url_for('planejar')}}">Entrar</button>
 
           <a href="{{url_for('cadastro')}}">Novo cadastro</a>
         </div>
