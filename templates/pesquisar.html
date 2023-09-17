@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/pesquisar.css')}}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <title>Planejar</title>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <nav class="navbar navbar-expand-lg bg-navbar w-100">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Travel Copilot</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/planejar"
+                >Planeje sua Viagem</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="my-4">
+      <div class="p-title info-card px-5 py-2 text-center mb-1">
+        <p >Para os dias selecionados, as melhores passagens aéreas para São Paulo são:</p>
+      </div>
+      <section class="d-flex flex-wrap flex-column justify-content-center align-items-center mx-auto p-0">
+        <a href="#" class="d-flex flex-wrap justify-content-around px-5 py-3 text-center border rounded schedule-card">  
+          <div class="fw-bold">LATAM: 05:05 - 08:20</div>
+          <div class="fw-semibold">3hrs 15min</div>
+          <div class="fw-semibold">Vôo direto</div>
+          <div class="fw-bold text-success">R$1.465</div>         
+        </a>
+        <a href="#" class="d-flex flex-wrap justify-content-around px-5 py-3 text-center border rounded schedule-card">  
+          <div class="fw-bold">LATAM: 23:25 - 02:45</div>
+          <div class="fw-semibold">3hrs 20min</div>
+          <div class="fw-semibold">Vôo direto</div>
+          <div class="fw-bold text-success">R$1.362</div>         
+        </a>
+        <a href="#" class="d-flex flex-wrap justify-content-around px-5 py-3 text-center border rounded schedule-card">  
+          <div class="fw-bold">LATAM: 08:40 - 12:00</div>
+          <div class="fw-semibold">3hrs 20min</div>
+          <div class="fw-semibold">Vôo direto</div>
+          <div class="fw-bold text-success">R$1.299</div>         
+        </a>
+      </section>
+    </div>
+    <div class="mt-5">
+      <div class="p-title info-card px-5 py-2 text-center mb-1">
+        <p>As melhores hospedagens para o período, em relação custo-benefício são:</p>
+      </div>
+      <section class="d-flex flex-wrap items-gap justify-content-center align-items-center mx-auto p-0">            
+        <div class="card card-height">
+          <div class="card-body text-center pt-4 pb-0 px-0">
+            <div class="mx-5">
+              <h5 class="card-title text-body-secondary">Hotéis de 2 estrelas</h5>
+              <h4 class="card-subtitle mb-4 fw-bold">R$ 500</h4>
+            </div>
+              <div class="card-footer">
+                <a class="fw-semibold" href="#">Mais 27 hotéis</a>
+              </div>
+          </div>
+        </div>
+        <div class="card card-height">
+          <div class="card-body text-center pt-4 pb-0 px-0">
+            <div class="mx-5">
+              <h5 class="card-title text-body-secondary">Hotéis de 3 estrelas</h5>
+              <h4 class="card-subtitle mb-4 fw-bold">R$ 666</h4>
+            </div>
+            <div class="card-footer">
+              <a class="fw-semibold" href="#">Mais 24 hotéis</a>
+            </div>
+          </div>
+        </div>
+        <div class="card card-height">
+          <div class="card-body text-center pt-4 pb-0 px-0">
+            <div class="mx-5">
+              <h5 class="card-title text-body-secondary">Hotéis de 4 estrelas</h5>
+              <h4 class="card-subtitle mb-4 fw-bold">R$ 770</h4>
+            </div>
+            <div class="card-footer">
+              <a class="fw-semibold" href="#">Mais 10 hotéis</a>
+            </div>
+          </div>
+        </div>
+        <div class="card card-height">
+          <div class="card-body text-center pt-4 pb-0 px-0">
+            <div class="mx-5">
+              <h5 class="card-title text-body-secondary">Hotéis de 5 estrelas</h5>
+              <h4 class="card-subtitle mb-4 fw-bold">R$ 2.287</h4>
+            </div>
+            <div class="card-footer">
+              <a class="fw-semibold" href="#">Mais 3 hotéis</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <footer class="p-3 footer">
+    <div class="d-flex align-items-center">
+      <ul class="items-list p-0 m-0">
+        <li>Sobre Nós</li>
+        <li>Contato</li>
+      </ul>
+      <div class="ms-auto">
+        <a
+          href="https://br.freepik.com/vetores-gratis/conjunto-de-ilustracao-de-desenhos-animados-de-trajetorias-de-aviao-pontilhado-caminho-ou-caminho-de-aviao-aeronave-de-jato-em-forma-de-coracao-linha-ou-circulos-com-ponto-de-destino-ou-marca-de-localizacao-viagem-distancia-conceito-de-rota_29119144.htm#query=airplane&position=0&from_view=search&track=sph"
+          >Imagem de pch.vector</a
+        >
+      </div>
+    </div>
+  </footer>
+</html>
