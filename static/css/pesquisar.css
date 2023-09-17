@@ -1,0 +1,108 @@
+html, body {    
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    padding: 0;
+    margin: 0;    
+}
+
+body{
+    background-image: url('bg-avioes.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.logo{
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 10px;
+    color: #000000;
+    font-size: 2rem;    
+  }
+
+.logo p{
+display: inline;
+}
+
+@media screen and (max-height: 446px) {
+    .logo{
+        display: none;
+    }
+}
+
+.p-title{
+    font-size: 1.75rem;
+}
+
+
+@media screen and (max-width: 992px){    
+
+    .p-title{
+        font-size: 1.3rem;
+    }
+}
+
+
+:root{
+    --bs-primary-bg-subtle: rgba(7, 227, 163, 0.8) !important;
+} 
+
+
+.bg-navbar, .footer{
+    background-color: rgba(7, 227, 163, 1)
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.card-height{
+    height: 220px !important;
+}
+
+.items-list li{
+    display: inline;
+    margin: 0 10px;
+}
+
+.items-gap{    
+    gap: 10px;
+}
+
+.card-footer{
+    padding: 10px 0 !important;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.info-card{
+    background-color: rgb(56, 55, 55);
+    color: #ffffff;
+}
+
+.schedule-card{
+    background-color: rgb(248, 248, 248);
+    width: 65%;
+}
+
+@media screen and (max-width: 1000px) {
+    .schedule-card{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .schedule-card{
+        width: 98%;        
+    }
+}
+
+a{
+    text-decoration: none !important;
+}
+
