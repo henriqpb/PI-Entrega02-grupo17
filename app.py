@@ -21,6 +21,13 @@ def login():
 def planejar():
     return render_template("planejar.html")
 
+@app.route("/pesquisar")
+def pesquisar():
+    return render_template("pesquisar.html")
+
+@app.route("/naoEncontrado")
+def naoEncontrado():
+    return render_template("naoEncontrado.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
