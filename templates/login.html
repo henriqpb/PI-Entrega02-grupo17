@@ -12,19 +12,20 @@
       rel="stylesheet"
       href="{{ url_for('static', filename='css/login.css')}}"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Login</title>
   </head>
 
   <body>
     <div class="logo">
-      <h1>
-        Travel Copilot
-      </h1>
-    </div>    
+      <h1>Travel Copilot</h1>
+    </div>
     <div id="login">
       <form class="card">
         <div class="card-header">
@@ -46,9 +47,9 @@
         </div>
 
         <div class="card-footer">
-          <input type="submit" value="Entrar" class="submit" />
+          <a type="submit" value="Entrar" class="submit" href="{{url_for('planejar')}}">Entrar</a>
 
-          <a href="#">Esqueceu a senha?</a>
+          <a href="{{url_for('cadastro')}}">Novo cadastro</a>
         </div>
       </form>
     </div>
